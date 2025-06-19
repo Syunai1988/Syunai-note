@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Syunai</title>
+</head>
+<style>
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#earth {
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    animation: spin 60s linear infinite; /* 60秒轉一圈，無限循環 */
+}
+    body {
+        background-color: #000; /* 黑色背景 */
+        color: #fff; /* 白色文字 */
+        font-family: "Noto Sans", "微軟正黑體", sans-serif; /* 字型 */
+        text-align: center; /* 內容置中 */
+        padding: 20px;
+    }
+
+    h1 {
+        color: #00ffff; /* 青藍色標題 */
+    }
+
+    ul {
+        list-style-type: none; /* 不顯示小點點 */
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        color: #ffcc00; /* 連結顏色 黃色 */
+        text-decoration: none; /* 去掉底線 */
+    }
+
+    a:hover {
+        text-decoration: underline; /* 滑鼠移上出現底線 */
+    }
+
+    #earth {
+        width: 200px;
+        margin: 20px auto;
+        display: block;
+    }
+</style>
+<img id="earth" src="earth_PNG18.png" alt="地球">
+<style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: "Noto Sans", "微軟正黑體", sans-serif;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #00ffff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 地球容器：全螢幕置中，最底層 */
+        #earth-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            opacity: 0.2; /* 透明度調低，避免太搶眼 */
+        }
+
+        /* 地球圖片：旋轉動畫 */
+        #earth {
+            width: 300px;
+            animation: spin 60s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 地球圖：最底層旋轉 -->
+    <div id="earth-container">
+        <img id="earth" src="earth_PNG18.png" alt="地球">
+    </div>
+<body>
+    <h1>第二級星球會是什麼樣子？</h1>
+    <p>大家來想一想二級星球會是什麼樣子</p>
+    <h1>別肖想地球多高級了，地球只是一級星球</h1>
+    <h2>海奧華預言 摘錄</h2>
+    <ul>
+       <li><a href="taichu.html">太初</a></li>
+       <li><a href="#">地球是一級星球</a></li>
+        <li><a href="#">海奧華星人也有人性？</a></li>
+        <li><a href="#">人類有9重命體？</a></li>
+        <li><a href="#">海奧華科技</a></li>
+        <li><a href="#">海奧華星人覺得的地球的問題</a></li>
+        <li><a href="#">海奧華星人知道的地球歷史</a></li>
+        <li><a href="#">曾經的一級星球科技</a></li>
+        <li><a href="#">海奧華星人說的九級星球分類</a></li></ul>
+
+
+    <h2>卡斯塔尼達筆記</h2>
+    <ul>
+        <li><a href="#">巫士看見者眼中的宇宙</a></li>
+        <li><a href="#">古代巫士眼中的宇宙</a></li>
+        <li><a href="#">世界的真理</a></li>
+        <li><a href="#">潛獵的原則</a></li>
+        <li><a href="#">潛獵的心境</a></li>
+        <li><a href="#">六個互相影響的元素</a></li>
+        <li><a href="#">注意力</a></li>
+        <li><a href="#">意願</a></li>
+        <li><a href="#">意識</a></li></ul>
+    <p>更新中……</p>
+</body>
+</html>
